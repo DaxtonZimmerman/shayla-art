@@ -1,0 +1,97 @@
+
+
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #444;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+#hero {
+  text-align: center;
+  padding: 50px 5px;
+  background-color: #ff0000;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1000px;         /* Limit width for clean layout */
+  margin: 0 auto;            /* Center horizontally */
+}
+
+.art-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.art-item img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.art-item img:hover {
+  transform: scale(1.03);
+}
+
+.label {
+  margin-top: 0.5rem;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+
+
+
+

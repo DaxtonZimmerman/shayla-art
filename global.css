@@ -1,0 +1,61 @@
+
+/* Reset & Typography */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #333;
+  background-color: #fff;
+}
+
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+header nav a {
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #000;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+}
